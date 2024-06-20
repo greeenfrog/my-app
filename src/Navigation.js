@@ -25,6 +25,22 @@ function Navigation({ brand }) {
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#education">Education</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="">
+              <img
+                src="/github.png"
+                width="30"
+                height="30"
+                alt="GitHub"
+              />
+            </Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/in/jianing-li-a12594150/">
+            <img
+                src="/in-blue.png"
+                width="30"
+                height="30"
+                alt="LinkedIn"
+              />
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
