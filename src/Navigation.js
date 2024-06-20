@@ -8,6 +8,13 @@ function Navigation({ brand }) {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">
+          <img
+            src="/pfp-round.png"
+            width="48"
+            height="48"
+          />
+        </Navbar.Brand>
+        <Navbar.Brand href="#home">
           <TypedText strings={brand}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
