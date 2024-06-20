@@ -5,7 +5,7 @@ import TypedText from './TypedText';
 
 function Navigation({ brand }) {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
       <Container>
         <Navbar.Brand href="#home">
           <img

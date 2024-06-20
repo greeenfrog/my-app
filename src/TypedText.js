@@ -6,7 +6,7 @@ function TypedText({ strings }) {
       strings={strings}
       typeSpeed={80}
       backSpeed={60}
-      backDelay={3000}
+      backDelay={5000}
       loop
     />
   );
