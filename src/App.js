@@ -1,10 +1,16 @@
-import Heading from './Heading';
+import Navigation from './Navigation';
+import TypedText from './TypedText';
 import './App.css';
+
+const name = ["Li Jianing", "李嘉宁"];
 
 function App() {
   return (
     <div className="App">
-      <Heading />
+      <Navigation brand={name}/>
+      <h1>
+        <TypedText strings={name}/>
+      </h1>
     </div>
     // <div className="App">
     //   <header className="App-header">
