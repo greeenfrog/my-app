@@ -63,7 +63,7 @@ function SkillsSlider() {
             <div className="icon">
               <img
                 src="/java.png"
-                width="96"
+                width="128"
                 alt="Java"
               />
             </div>
