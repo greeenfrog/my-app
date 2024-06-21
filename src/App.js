@@ -44,7 +44,7 @@ function App() {
         <h2><TypedText strings={["Skills"]} /></h2>
         <Container>
           <Row>
-            <Col xs={{ span: 8, offset: 2 }} lg={{ span: 6, offset: 3 }}>
+            <Col xs={12} lg={{ span: 8, offset: 2 }} xl={{ span: 6, offset: 3 }}>
               <SkillsSlider />
             </Col>
           </Row>

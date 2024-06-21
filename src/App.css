@@ -15,7 +15,16 @@
   border-radius: 10px;
   background-image: linear-gradient(to bottom right, white, #aaa);
   padding: 30px;
-  height: 320px;
+  height: 360px;
+}
+
+.icons {
+  display: inline-block;
+  margin: 20px;
+}
+
+.icon {
+  float: left;
 }
 
 #home {
