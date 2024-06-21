@@ -1,10 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Navigation from './Navigation';
-import TypedText from './TypedText';
-import SkillsSlider from './SkillsSlider';
-import ContactForm from './ContactForm';
+import Navigation from './components/Navigation';
+import TypedText from './components/TypedText';
+import SkillsSlider from './components/SkillsSlider';
+import ContactForm from './components/ContactForm';
 import './App.css';
 
 function App() {
