@@ -21,21 +21,26 @@ function ThemeButton({ isDark, onToggleTheme }) {
             document.body.classList.toggle("dark-mode");
           }}
           className='theme-btn'
+          title={
+            isDark ?
+            "Light mode" :
+            "Dark mode"
+          }
         >
-        <img
-        src={
-          isDark ?
-          "/navigation/light-mode.png" :
-          "/navigation/dark-mode.png"
-        }
-        width="30"
-        height="30"
-        alt={
-          isDark ?
-          "Light mode" :
-          "Dark mode"
-        }
-        />
+          <img
+          src={
+            isDark ?
+            "/navigation/light-mode.png" :
+            "/navigation/dark-mode.png"
+          }
+          width="30"
+          height="30"
+          alt={
+            isDark ?
+            "Light mode" :
+            "Dark mode"
+          }
+          />
         </ToggleButton>
       </ButtonGroup>
     </div>

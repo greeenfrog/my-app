@@ -42,6 +42,7 @@ function Navigation({ brand, isDark, onToggleTheme }) {
                   width="30"
                   height="30"
                   alt="GitHub"
+                  title="GitHub"
                 />
               </div>
             </Nav.Link>
@@ -56,6 +57,7 @@ function Navigation({ brand, isDark, onToggleTheme }) {
                   width="30"
                   height="30"
                   alt="LinkedIn"
+                  title="LinkedIn"
                 />
               </div>
             </Nav.Link>
