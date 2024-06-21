@@ -1,4 +1,4 @@
-import { ReactTyped } from "react-typed";
+import { ReactTyped } from 'react-typed';
 
 function TypedText({ strings }) {
   return (

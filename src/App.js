@@ -57,9 +57,6 @@ function App() {
           </Row>
         </Container>
       </div>
-      {/* <div id="education">
-        <h2><TypedText strings={["Education"]} /></h2>
-      </div> */}
       <div id="contact">
         <Container>
           <Row>
