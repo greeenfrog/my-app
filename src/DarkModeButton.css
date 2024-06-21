@@ -1,0 +1,15 @@
+#dark-mode-container {
+  margin: 0 30px;
+}
+
+.dark-mode-btn {
+  border-radius: 24px;
+  background-color: #ddd;
+  border: 0;
+  padding: 8px;
+  margin: auto;
+}
+
+.dark-mode-btn:hover {
+  background-color: #aaa !important;
+}

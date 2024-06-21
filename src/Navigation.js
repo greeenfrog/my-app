@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import TypedText from './TypedText';
+import DarkModeButton from './DarkModeButton';
 
 function Navigation({ brand }) {
   return (
@@ -34,13 +35,14 @@ function Navigation({ brand }) {
               />
             </Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/jianing-li-a12594150/">
-            <img
+              <img
                 src="/navigation/in-blue.png"
                 width="30"
                 height="30"
                 alt="LinkedIn"
               />
             </Nav.Link>
+            <DarkModeButton />
           </Nav>
         </Navbar.Collapse>
       </Container>
