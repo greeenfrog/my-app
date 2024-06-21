@@ -5,7 +5,7 @@ import TypedText from './TypedText';
 
 function Navigation({ brand }) {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
+    <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
       <Container>
         <Navbar.Brand href="#home">
           <img
@@ -48,5 +48,4 @@ function Navigation({ brand }) {
   );
 }
 
-// about skills education contact
 export default Navigation;
