@@ -2,6 +2,22 @@
   text-align: center;
 }
 
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slider {
+  margin: 60px
+}
+
+.slide {
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, white, #aaa);
+  padding: 30px;
+  height: 320px;
+}
+
 #home {
   padding-top: 128px;
   padding-bottom: 128px;

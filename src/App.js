@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Navigation from './Navigation';
 import TypedText from './TypedText';
+import SkillsSlider from './SkillsSlider';
 import './App.css';
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
       <div id="about">
         <Container>
           <Row>
-            <Col xs={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2}}>
+            <Col xs={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }}>
               <h2><TypedText strings={["About"]} /></h2>
               <p>
                 I am a Computer Science student at the University of Auckland.<br />
@@ -41,6 +42,13 @@ function App() {
       </div>
       <div id="skills">
         <h2><TypedText strings={["Skills"]} /></h2>
+        <Container>
+          <Row>
+            <Col xs={{ span: 8, offset: 2 }} lg={{ span: 6, offset: 3 }}>
+              <SkillsSlider />
+            </Col>
+          </Row>
+        </Container>
       </div>
       <div id="education">
         <h2><TypedText strings={["Education"]} /></h2>
@@ -49,22 +57,6 @@ function App() {
         <h2><TypedText strings={["Contact"]} /></h2>
       </div>
     </div>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 
