@@ -50,9 +50,9 @@ function App() {
           </Row>
         </Container>
       </div>
-      <div id="education">
+      {/* <div id="education">
         <h2><TypedText strings={["Education"]} /></h2>
-      </div>
+      </div> */}
       <div id="contact">
         <h2><TypedText strings={["Contact"]} /></h2>
       </div>
