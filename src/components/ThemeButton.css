@@ -1,8 +1,8 @@
-#dark-mode-container {
+#theme-container {
   margin: 0 30px;
 }
 
-.dark-mode-btn {
+.theme-btn {
   border-radius: 24px;
   background-color: #ddd;
   border: 0;
@@ -10,6 +10,3 @@
   margin: auto;
 }
 
-.dark-mode-btn:hover {
-  background-color: #aaa !important;
-}

@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import TypedText from './TypedText';
-import DarkModeButton from './DarkModeButton';
+import ThemeButton from './ThemeButton';
 
 function Navigation({ brand }) {
   return (
@@ -42,7 +42,7 @@ function Navigation({ brand }) {
                 alt="LinkedIn"
               />
             </Nav.Link>
-            <DarkModeButton />
+            <ThemeButton />
           </Nav>
         </Navbar.Collapse>
       </Container>
