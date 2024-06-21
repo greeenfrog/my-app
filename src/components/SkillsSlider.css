@@ -22,3 +22,13 @@
 .icon {
   float: left;
 }
+
+.dark-mode
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+}
+
+.dark-mode .slide {
+  background-image: linear-gradient(to bottom right, #333, #111);
+}
