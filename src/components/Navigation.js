@@ -18,6 +18,7 @@ function Navigation({ brand, isDark, onToggleTheme }) {
             src="/pfp-round.png"
             width="48"
             height="48"
+            alt=""
           />
         </Navbar.Brand>
         <Navbar.Brand href="#home">

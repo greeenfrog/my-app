@@ -27,7 +27,7 @@ function App() {
           src="/pfp-round.png"
           width="250"
           height="250"
-          alt="Profile picture"
+          alt=""
         />
       </div>
       <div id="about">
