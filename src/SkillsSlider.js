@@ -1,6 +1,6 @@
-import { React, useState } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
-// python, html+css+js, java, kotlin+android
+import './SkillsSlider.css';
 
 function SkillsSlider() {
   const settings = {
