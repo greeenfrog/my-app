@@ -4,9 +4,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import TypedText from './TypedText';
 import ThemeButton from './ThemeButton';
 
-function Navigation({ brand }) {
+function Navigation({ brand, isDark, onToggleTheme }) {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
+    <Navbar
+      expand="lg"
+      bg={isDark ? "dark" : "light"}
+      data-bs-theme={isDark ? "dark" : "light"}
+      fixed="top"
+      >
       <Container>
         <Navbar.Brand href="#home">
           <img
@@ -28,7 +33,11 @@ function Navigation({ brand }) {
             <Nav.Link href="#contact">Contact</Nav.Link>
             <Nav.Link href="">
               <img
-                src="/navigation/github.png"
+                src={
+                  isDark ?
+                  "/navigation/github-white.png" :
+                  "/navigation/github.png"
+                }
                 width="30"
                 height="30"
                 alt="GitHub"
@@ -36,13 +45,20 @@ function Navigation({ brand }) {
             </Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/jianing-li-a12594150/">
               <img
-                src="/navigation/in-blue.png"
+                src={
+                  isDark ?
+                  "/navigation/in-white.png" :
+                  "/navigation/in-blue.png"
+                }
                 width="30"
                 height="30"
                 alt="LinkedIn"
               />
             </Nav.Link>
-            <ThemeButton />
+            <ThemeButton
+              isDark={isDark}
+              onToggleTheme={onToggleTheme}
+            />
           </Nav>
         </Navbar.Collapse>
       </Container>

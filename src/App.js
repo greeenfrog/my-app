@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -10,10 +11,15 @@ import './App.css';
 function App() {
   const name = ["Li Jianing", "李嘉宁"];
   const about = ["Software developer", "CS student @ UoA"]
+  const [isDark, setDark] = useState(false); // false => light, true => dark
 
   return (
     <div className="App">
-      <Navigation brand={name} />
+      <Navigation
+        brand={name}
+        isDark={isDark}
+        onToggleTheme={() => setDark(!isDark)}
+      />
       <div id="home">
         <h1><TypedText strings={name} /></h1>
         <h2><TypedText strings={about} /></h2>

@@ -3,8 +3,9 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import './ThemeButton.css'
 
-function ThemeButton() {
+function ThemeButton({ isDark, onToggleTheme }) {
   const [checked, setChecked] = useState(false);
+
   return (
     <div id="theme-container">
       <ButtonGroup>
@@ -14,15 +15,27 @@ function ThemeButton() {
           variant='secondary'
           checked={checked}
           value={1}
-          onChange={(e) => setChecked(e.currentTarget.checked)}
+          onChange={(e) => {
+            onToggleTheme();
+            setChecked(e.currentTarget.checked);
+            document.body.classList.toggle("dark-mode");
+          }}
           className='theme-btn'
         >
-          <img
-            src="/navigation/dark-mode.png"
-            width="30"
-            height="30"
-            alt="Dark mode"
-          />
+        <img
+        src={
+          isDark ?
+          "/navigation/light-mode.png" :
+          "/navigation/dark-mode.png"
+        }
+        width="30"
+        height="30"
+        alt={
+          isDark ?
+          "Light mode" :
+          "Dark mode"
+        }
+        />
         </ToggleButton>
       </ButtonGroup>
     </div>
