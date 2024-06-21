@@ -31,7 +31,7 @@ function Navigation({ brand, isDark, onToggleTheme }) {
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="">
+            <Nav.Link href="" target="_blank">
               <div className="nav-icon">
                 <img
                   src={
@@ -46,7 +46,7 @@ function Navigation({ brand, isDark, onToggleTheme }) {
                 />
               </div>
             </Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/in/jianing-li-a12594150/">
+            <Nav.Link href="https://www.linkedin.com/in/jianing-li-a12594150/" target="_blank">
               <div className="nav-icon">
                 <img
                   src={
