@@ -27,7 +27,7 @@ function Navigation({ brand }) {
             <Nav.Link href="#contact">Contact</Nav.Link>
             <Nav.Link href="">
               <img
-                src="/github.png"
+                src="/navigation/github.png"
                 width="30"
                 height="30"
                 alt="GitHub"
@@ -35,7 +35,7 @@ function Navigation({ brand }) {
             </Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/jianing-li-a12594150/">
             <img
-                src="/in-blue.png"
+                src="/navigation/in-blue.png"
                 width="30"
                 height="30"
                 alt="LinkedIn"
