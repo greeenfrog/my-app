@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Navigation from './Navigation';
 import TypedText from './TypedText';
 import SkillsSlider from './SkillsSlider';
+import ContactForm from './ContactForm';
 import './App.css';
 
 function App() {
@@ -54,7 +55,13 @@ function App() {
         <h2><TypedText strings={["Education"]} /></h2>
       </div> */}
       <div id="contact">
-        <h2><TypedText strings={["Contact"]} /></h2>
+        <Container>
+          <Row>
+            <Col xs={12} md={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+              <ContactForm />
+            </Col>
+          </Row>
+        </Container>
       </div>
     </div>
   );

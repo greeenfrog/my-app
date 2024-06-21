@@ -12,8 +12,8 @@
 }
 
 .slide {
-  border-radius: 10px;
-  background-image: linear-gradient(to bottom right, white, #aaa);
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, white, #ddd);
   padding: 30px;
   height: 360px;
 }
@@ -25,6 +25,18 @@
 
 .icon {
   float: left;
+}
+
+.form {
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom right, white, #ddd);
+  background-color: white;
+  padding: 30px;
+  margin: 60px 30px;
+}
+
+.form-group {
+  margin: 10px
 }
 
 #home {
@@ -49,5 +61,5 @@
 
 #contact {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 160px;
 }
