@@ -23,9 +23,8 @@
   float: left;
 }
 
-.dark-mode
-.slick-prev:before,
-.slick-next:before {
+.dark-mode .slick-prev:before,
+.dark-mode .slick-next:before {
   color: white;
 }
 
