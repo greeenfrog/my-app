@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'UbuntuMono';
+  src: url("/public/UbuntuMono/UbuntuMono-Regular.ttf") format("truetype");
+}
+
 body {
   background-color: #f0f0f0;
-  font-family: Consolas, monaco, monospace;
+  /* font-family: Consolas, monaco, monospace; */
+  font-family: 'UbuntuMono', monospace;
   font-size: 18px;
   margin: 0;
 }
