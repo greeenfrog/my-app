@@ -32,28 +32,32 @@ function Navigation({ brand, isDark, onToggleTheme }) {
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
             <Nav.Link href="">
-              <img
-                src={
-                  isDark ?
-                  "/navigation/github-white.png" :
-                  "/navigation/github.png"
-                }
-                width="30"
-                height="30"
-                alt="GitHub"
-              />
+              <div className="nav-icon">
+                <img
+                  src={
+                    isDark ?
+                    "/navigation/github-white.png" :
+                    "/navigation/github.png"
+                  }
+                  width="30"
+                  height="30"
+                  alt="GitHub"
+                />
+              </div>
             </Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/jianing-li-a12594150/">
-              <img
-                src={
-                  isDark ?
-                  "/navigation/in-white.png" :
-                  "/navigation/in-blue.png"
-                }
-                width="30"
-                height="30"
-                alt="LinkedIn"
-              />
+              <div className="nav-icon">
+                <img
+                  src={
+                    isDark ?
+                    "/navigation/in-white.png" :
+                    "/navigation/in-blue.png"
+                  }
+                  width="30"
+                  height="30"
+                  alt="LinkedIn"
+                />
+              </div>
             </Nav.Link>
             <ThemeButton
               isDark={isDark}
