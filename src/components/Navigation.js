@@ -15,7 +15,7 @@ function Navigation({ brand, isDark, onToggleTheme }) {
       <Container>
         <Navbar.Brand href="#home">
           <img
-            src="/pfp-round.png"
+            src="/pfp.png"
             width="48"
             height="48"
             alt=""
