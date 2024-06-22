@@ -68,7 +68,7 @@ function App() {
       <div id="contact">
         <Container>
           <Row>
-            <Col xs={12} md={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }}>
+            <Col xs={12} md={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }} xl={{ span: 6, offset: 3 }}>
               <ContactForm isDark={isDark} />
             </Col>
           </Row>
