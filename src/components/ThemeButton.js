@@ -12,10 +12,7 @@ function ThemeButton({ isDark, onToggleTheme }) {
           variant='secondary'
           checked={isDark}
           value={1}
-          onChange={() => {
-            onToggleTheme();
-            document.body.classList.toggle("dark-mode");
-          }}
+          onChange={() => onToggleTheme()}
           className='theme-btn'
           title={
             isDark ?

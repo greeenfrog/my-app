@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useCookies } from 'react-cookie';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,14 +12,20 @@ import './App.css';
 function App() {
   const name = ["Li Jianing", "李嘉宁"];
   const about = ["Software developer", "CS student @ UoA"]
-  const [isDark, setDark] = useState(false); // false => light, true => dark
+  const [cookies, setCookie] = useCookies(["is-dark"]);
+  const [isDark, setDark] = useState(cookies["is-dark"]);
+  if (isDark) document.body.classList.add("dark-mode");
 
   return (
     <div className="App">
       <Navigation
         brand={name}
         isDark={isDark}
-        onToggleTheme={() => setDark(!isDark)}
+        onToggleTheme={() => {          
+          setCookie("is-dark", !isDark, {path: "/"});
+          setDark(!isDark);
+          document.body.classList.toggle("dark-mode");
+        }}
       />
       <div id="home">
         <h1><TypedText strings={name} /></h1>
