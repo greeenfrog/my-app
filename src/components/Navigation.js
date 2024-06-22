@@ -15,7 +15,7 @@ function Navigation({ brand, isDark, onToggleTheme }) {
       <Container>
         <Navbar.Brand href="#home">
           <img
-            src="/pfp.png"
+            src="/images/pfp.png"
             width="48"
             height="48"
             alt=""
@@ -36,8 +36,8 @@ function Navigation({ brand, isDark, onToggleTheme }) {
                 <img
                   src={
                     isDark ?
-                    "/navigation/github-white.png" :
-                    "/navigation/github.png"
+                    "/images/navigation/github-white.png" :
+                    "/images/navigation/github.png"
                   }
                   width="30"
                   height="30"
@@ -51,8 +51,8 @@ function Navigation({ brand, isDark, onToggleTheme }) {
                 <img
                   src={
                     isDark ?
-                    "/navigation/in-white.png" :
-                    "/navigation/in-blue.png"
+                    "/images/navigation/in-white.png" :
+                    "/images/navigation/in-blue.png"
                   }
                   width="30"
                   height="30"

@@ -23,8 +23,8 @@ function ThemeButton({ isDark, onToggleTheme }) {
           <img
           src={
             isDark ?
-            "/navigation/light-mode.png" :
-            "/navigation/dark-mode.png"
+            "/images/navigation/light-mode.png" :
+            "/images/navigation/dark-mode.png"
           }
           width="30"
           height="30"

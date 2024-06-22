@@ -15,7 +15,7 @@ function SkillsSlider() {
           <div className="icons">
             <div className="icon">
               <img
-                src="/skills-slider/python.svg"
+                src="/images/skills-slider/python.svg"
                 width="96"
                 alt="Python"
               />
@@ -31,21 +31,21 @@ function SkillsSlider() {
           <div className="icons">
             <div className="icon">
               <img
-                src="/skills-slider/html5.svg"
+                src="/images/skills-slider/html5.svg"
                 width="72"
                 alt="HTML5"
               />
             </div>
             <div className="icon">
               <img
-                src="/skills-slider/css3.svg"
+                src="/images/skills-slider/css3.svg"
                 width="72"
                 alt="CSS3"
               />
             </div>
             <div className="icon">
               <img
-                src="/skills-slider/js.png"
+                src="/images/skills-slider/js.png"
                 width="72"
                 alt="JavaScript"
               />
@@ -62,7 +62,7 @@ function SkillsSlider() {
           <div className="icons">
             <div className="icon">
               <img
-                src="/skills-slider/java.png"
+                src="/images/skills-slider/java.png"
                 width="128"
                 alt="Java"
               />
@@ -77,14 +77,14 @@ function SkillsSlider() {
           <div className="icons">
             <div className="icon">
               <img
-                src="/skills-slider/kotlin.png"
+                src="/images/skills-slider/kotlin.png"
                 width="96"
                 alt="Kotlin"
               />
             </div>
             <div className="icon">
               <img
-                src="/skills-slider/android.svg"
+                src="/images/skills-slider/android.svg"
                 width="96"
                 alt="Android"
               />

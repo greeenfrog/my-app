@@ -31,7 +31,7 @@ function App() {
         <h1><TypedText strings={name} /></h1>
         <h2><TypedText strings={about} /></h2>
         <img
-          src="/pfp.png"
+          src="/images/pfp.png"
           width="250"
           height="250"
           alt=""
