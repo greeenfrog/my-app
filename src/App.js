@@ -12,9 +12,9 @@ import './App.css';
 function App() {
   const name = ["Li Jianing", "李嘉宁"];
   const about = ["Software developer", "CS student @ UoA"]
-  const [cookies, setCookie] = useCookies(["is-dark"]);
-  const [isDark, setDark] = useState(cookies["is-dark"]);
-  if (isDark) document.body.classList.add("dark-mode");
+  const [cookies, setCookie] = useCookies(["dark"]);
+  const [isDark, setDark] = useState(cookies["dark"]);
+  if (isDark) document.body.classList.add("dark");
 
   return (
     <div className="App">
@@ -22,9 +22,9 @@ function App() {
         brand={name}
         isDark={isDark}
         onToggleTheme={() => {          
-          setCookie("is-dark", !isDark, {path: "/"});
+          setCookie("dark", !isDark, {path: "/"});
           setDark(!isDark);
-          document.body.classList.toggle("dark-mode");
+          document.body.classList.toggle("dark");
         }}
       />
       <div id="home">

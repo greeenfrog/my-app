@@ -29,11 +29,11 @@ p {
   text-align: left;
 }
 
-.dark-mode {
+.dark {
   background-color: #222;
   color: #fff;
 }
 
-.dark-mode h2{
+.dark h2{
   color: yellow;
 }

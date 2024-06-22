@@ -9,16 +9,16 @@
   margin: 10px
 }
 
-.dark-mode .form {
+.dark .form {
   background-image: linear-gradient(to bottom right, #333, #111);
 }
 
-.dark-mode .form-control {
+.dark .form-control {
   border: 0;
   background-color: #333;
   color: white;
 }
 
-.dark-mode ::placeholder {
+.dark ::placeholder {
   color: white;
 }

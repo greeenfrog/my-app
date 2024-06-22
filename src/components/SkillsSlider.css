@@ -23,11 +23,11 @@
   float: left;
 }
 
-.dark-mode .slick-prev:before,
-.dark-mode .slick-next:before {
+.dark .slick-prev:before,
+.dark .slick-next:before {
   color: white;
 }
 
-.dark-mode .slide {
+.dark .slide {
   background-image: linear-gradient(to bottom right, #333, #111);
 }
