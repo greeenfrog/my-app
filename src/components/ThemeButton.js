@@ -1,11 +1,8 @@
-import { useState } from 'react';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import './ThemeButton.css'
 
 function ThemeButton({ isDark, onToggleTheme }) {
-  const [checked, setChecked] = useState(false);
-
   return (
     <div id="theme-container">
       <ButtonGroup>
@@ -13,11 +10,10 @@ function ThemeButton({ isDark, onToggleTheme }) {
           id="toggle-check"
           type="checkbox"
           variant='secondary'
-          checked={checked}
+          checked={isDark}
           value={1}
-          onChange={(e) => {
+          onChange={() => {
             onToggleTheme();
-            setChecked(e.currentTarget.checked);
             document.body.classList.toggle("dark-mode");
           }}
           className='theme-btn'
