@@ -59,8 +59,11 @@ function Navigation({ brand, isDark, onToggleTheme }) {
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="" target="_blank">
-              <div className="nav-icon">
+            <Nav.Item id="nav-icons">
+              <Nav.Link
+                href=""
+                target="_blank"
+              >
                 <img
                   src={
                     isDark ?
@@ -72,10 +75,11 @@ function Navigation({ brand, isDark, onToggleTheme }) {
                   alt="GitHub"
                   title="GitHub"
                 />
-              </div>
-            </Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/in/jianing-li-a12594150/" target="_blank">
-              <div className="nav-icon">
+              </Nav.Link>
+              <Nav.Link
+                href="https://www.linkedin.com/in/jianing-li-a12594150/"
+                target="_blank"
+              >
                 <img
                   src={
                     isDark ?
@@ -87,8 +91,8 @@ function Navigation({ brand, isDark, onToggleTheme }) {
                   alt="LinkedIn"
                   title="LinkedIn"
                 />
-              </div>
-            </Nav.Link>
+              </Nav.Link>
+            </Nav.Item>
             <ThemeButton
               isDark={isDark}
               onToggleTheme={onToggleTheme}

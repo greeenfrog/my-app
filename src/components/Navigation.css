@@ -1,5 +1,11 @@
-.nav-icon {
-  margin: 0 5px;
+#nav-icons {
+  display: inline-block;
+  margin: auto;
+}
+
+#nav-icons a {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 #nav-toggle {
