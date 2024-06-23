@@ -13,7 +13,7 @@ function ThemeButton({ isDark, onToggleTheme }) {
           checked={isDark}
           value={1}
           onChange={() => onToggleTheme()}
-          className='theme-btn'
+          className="theme-btn"
           title={
             isDark ?
             "Light mode" :
@@ -21,18 +21,18 @@ function ThemeButton({ isDark, onToggleTheme }) {
           }
         >
           <img
-          src={
-            isDark ?
-            "/images/navigation/light-mode.png" :
-            "/images/navigation/dark-mode.png"
-          }
-          width="30"
-          height="30"
-          alt={
-            isDark ?
-            "Light mode" :
-            "Dark mode"
-          }
+            src={
+              isDark ?
+              "/images/navigation/light-mode.png" :
+              "/images/navigation/dark-mode.png"
+            }
+            width="30"
+            height="30"
+            alt={
+              isDark ?
+              "Light mode" :
+              "Dark mode"
+            }
           />
         </ToggleButton>
       </ButtonGroup>
