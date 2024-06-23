@@ -1,3 +1,8 @@
+.navbar-nav a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #nav-icons {
   display: inline-block;
   margin: auto;
@@ -11,4 +16,8 @@
 #nav-toggle {
   border: 0;
   padding: 5px;
+}
+
+.dark .navbar-nav a {
+  color: yellow;
 }
