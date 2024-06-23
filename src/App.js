@@ -74,6 +74,12 @@ function App() {
           </Row>
         </Container>
       </div>
+      <div id="footer">
+        <p>
+          {name.join(" | ")}<br />
+          Powered by React.js | Icons by <a href="https://icons8.com/">icons8.com</a>
+        </p>
+      </div>
     </div>
   );
 }

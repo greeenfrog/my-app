@@ -22,3 +22,15 @@
   padding-top: 120px;
   padding-bottom: 160px;
 }
+
+#footer p {
+  margin: 20px;
+}
+
+#footer a {
+  color: black;
+}
+
+.dark #footer a {
+  color: white;
+}
