@@ -4,7 +4,15 @@ from flask import Flask
 from flask import request
 from werkzeug.exceptions import BadRequest, ServiceUnavailable
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../build', static_url_path='/')
+
+@app.route('/')
+def index():
+    return app.send_static_file('index.html')
+
+@app.route('/test')
+def test():
+    return 'test'
 
 @app.route('/api/send', methods=['POST'])
 def send():
