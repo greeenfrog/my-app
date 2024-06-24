@@ -75,11 +75,9 @@ function App() {
         </Container>
       </div>
       <div id="footer">
-        <p>
-          {name.join(" | ")}<br />
-          Powered by React.js + Flask<br />
-          Icons by <a href="https://icons8.com/" rel="noreferrer" target="_blank">icons8.com</a>
-        </p>
+        {name.join(" | ")}<br />
+        Powered by React.js + Flask<br />
+        Icons by <a href="https://icons8.com/" rel="noreferrer" target="_blank">icons8.com</a>
       </div>
     </div>
   );

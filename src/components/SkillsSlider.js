@@ -32,14 +32,14 @@ function SkillsSlider() {
             <div className="icon">
               <img
                 src="/images/skills-slider/html5.svg"
-                width="64"
+                width="72"
                 alt="HTML5"
               />
             </div>
             <div className="icon">
               <img
                 src="/images/skills-slider/css3.svg"
-                width="64"
+                width="72"
                 alt="CSS3"
               />
             </div>
