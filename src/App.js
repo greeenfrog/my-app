@@ -77,7 +77,8 @@ function App() {
       <div id="footer">
         <p>
           {name.join(" | ")}<br />
-          Powered by React.js | Icons by <a href="https://icons8.com/">icons8.com</a>
+          Powered by React.js<br />
+          Icons by <a href="https://icons8.com/" rel="noreferrer" target="_blank">icons8.com</a>
         </p>
       </div>
     </div>
