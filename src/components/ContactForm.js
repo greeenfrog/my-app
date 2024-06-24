@@ -10,11 +10,28 @@ function ContactForm({ isDark }) {
   function handleSubmit(e) {
     const form = e.currentTarget;
     if (form.checkValidity()) {
-      
+      const formData = new FormData(form);
+      sendData(formData);
     } else {
       e.preventDefault();
       e.stopPropagation();
       setValidated(true);
+    }
+  }
+
+  async function sendData(formData) {
+    console.log(...formData);
+    try {
+      const response = await fetch("/send", {
+        method: "POST",
+        // headers: {
+        //   "Content-Type": "application/json",
+        // },
+        body: formData,
+      });
+      console.log(await response.json());
+    } catch (e) {
+      console.error(e);
     }
   }
 
@@ -28,6 +45,7 @@ function ContactForm({ isDark }) {
       <h2><TypedText strings={["Contact"]} /></h2>
       <Form.Group className="form-group">
         <Form.Control
+          name="name"
           required
           type="text"
           placeholder="Name"
@@ -39,6 +57,7 @@ function ContactForm({ isDark }) {
       </Form.Group>
       <Form.Group className="form-group">
         <Form.Control
+          name="email"
           required
           type="email"
           placeholder="Email address"
@@ -50,6 +69,7 @@ function ContactForm({ isDark }) {
       </Form.Group>
       <Form.Group className="form-group">
         <Form.Control
+          name="message"
           required
           as="textarea"
           placeholder="Message"
