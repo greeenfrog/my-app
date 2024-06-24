@@ -56,8 +56,8 @@ function ContactForm({ isDark }) {
             setNameValidated(true);
             setNameLength(e.currentTarget.value.length);
           }}
-          isValid={nameValidated && 0 < nameLength <= 100}
-          isInvalid={nameValidated && (nameLength <= 0 || nameLength > 100)}
+          isValid={nameValidated && 0 < nameLength < 101}
+          isInvalid={nameValidated && (nameLength <= 0 || nameLength >= 101)}
           className="form-control"
         />
         <Form.Control.Feedback type="invalid">
@@ -99,8 +99,8 @@ function ContactForm({ isDark }) {
             setMessageValidated(true);
             setMessageLength(e.currentTarget.value.length);
           }}
-          isValid={messageValidated && 0 < messageLength <= 1000}
-          isInvalid={messageValidated && (messageLength <= 0 || messageLength > 1000)}
+          isValid={messageValidated && 0 < messageLength < 1001}
+          isInvalid={messageValidated && (messageLength <= 0 || messageLength >= 1001)}
           className="form-control"
         />
         <Form.Control.Feedback type="invalid">
