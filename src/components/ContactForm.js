@@ -5,7 +5,12 @@ import TypedText from './TypedText';
 import './ContactForm.css';
 
 function ContactForm({ isDark }) {
-  const [validated, setValidated] = useState(false);
+  const [nameValidated, setNameValidated] = useState(false);
+  const [emailValidated, setEmailValidated] = useState(false);
+  const [messageValidated, setMessageValidated] = useState(false);
+  const [nameLength, setNameLength] = useState(0);
+  const [isValidEmail, setValidEmail] = useState(false);
+  const [messageLength, setMessageLength] = useState(0);
 
   function handleSubmit(e) {
     const form = e.currentTarget;
@@ -15,7 +20,9 @@ function ContactForm({ isDark }) {
     } else {
       e.preventDefault();
       e.stopPropagation();
-      setValidated(true);
+      setNameValidated(true);
+      setEmailValidated(true);
+      setMessageValidated(true);
     }
   }
 
@@ -24,9 +31,6 @@ function ContactForm({ isDark }) {
     try {
       const response = await fetch("/send", {
         method: "POST",
-        // headers: {
-        //   "Content-Type": "application/json",
-        // },
         body: formData,
       });
       console.log(await response.json());
@@ -38,7 +42,6 @@ function ContactForm({ isDark }) {
   return (
     <Form
       noValidate
-      validated={validated}
       onSubmit={handleSubmit}
       className="form"
     >
@@ -49,10 +52,22 @@ function ContactForm({ isDark }) {
           required
           type="text"
           placeholder="Name"
+          onChange={(e) => {
+            setNameValidated(true);
+            setNameLength(e.currentTarget.value.length);
+          }}
+          isValid={nameValidated && 0 < nameLength <= 100}
+          isInvalid={nameValidated && (nameLength <= 0 || nameLength > 100)}
           className="form-control"
         />
         <Form.Control.Feedback type="invalid">
-          <p>Please enter your name.</p>
+          <p>
+            {
+              nameLength <= 0 ?
+              "Please enter your name." :
+              "Name cannot exceed 100 characters."
+            }
+          </p>
         </Form.Control.Feedback>
       </Form.Group>
       <Form.Group className="form-group">
@@ -61,6 +76,12 @@ function ContactForm({ isDark }) {
           required
           type="email"
           placeholder="Email address"
+          onChange={(e) => {
+            setEmailValidated(true);
+            setValidEmail(e.currentTarget.checkValidity());
+          }}
+          isValid={emailValidated && isValidEmail}
+          isInvalid={emailValidated && !isValidEmail}
           className="form-control"
         />
         <Form.Control.Feedback type="invalid">
@@ -74,10 +95,22 @@ function ContactForm({ isDark }) {
           as="textarea"
           placeholder="Message"
           rows={8}
+          onChange={(e) => {
+            setMessageValidated(true);
+            setMessageLength(e.currentTarget.value.length);
+          }}
+          isValid={messageValidated && 0 < messageLength <= 1000}
+          isInvalid={messageValidated && (messageLength <= 0 || messageLength > 1000)}
           className="form-control"
         />
         <Form.Control.Feedback type="invalid">
-          <p>Please enter your message.</p>
+          <p>
+            {
+              messageLength <= 0 ?
+              "Please enter your message.":
+              "Message cannot exceed 1000 characters."
+            }
+          </p>
         </Form.Control.Feedback>
       </Form.Group>
       <Button
