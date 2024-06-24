@@ -6,7 +6,7 @@ from werkzeug.exceptions import BadRequest, ServiceUnavailable
 
 app = Flask(__name__)
 
-@app.route('/send', methods=['POST'])
+@app.route('/api/send', methods=['POST'])
 def send():
     if request.method == 'POST':
         form = request.form.to_dict()
