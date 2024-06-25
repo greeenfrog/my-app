@@ -54,14 +54,14 @@ function Navigation({ brand, isDark, onToggleTheme }) {
           />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav defaultActiveKey='#home' className="ms-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
             <Nav.Item id="nav-icons">
               <Nav.Link
-                href=""
+                href="https://github.com/greeenfrog"
                 target="_blank"
               >
                 <img
