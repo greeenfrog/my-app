@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Personal website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
+[Flask](https://flask.palletsprojects.com/en/3.0.x/) was used for the back-end.
 
 ## Available Scripts
 
