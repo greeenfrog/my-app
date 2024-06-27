@@ -69,8 +69,6 @@ function App() {
                 JavaScript: React.js<br/>
                 Python: Flask, PyTorch, Pandas etc.
               </p>
-            </Col>
-            <Col xs={12} lg={{ span: 8, offset: 2 }} xl={{ span: 6, offset: 3 }}>
               <SkillsSlider />
             </Col>
           </Row>
