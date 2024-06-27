@@ -44,11 +44,13 @@ function App() {
           <Row>
             <Col xs={12} lg={{ span: 8, offset: 2 }} xl={{ span: 6, offset: 3 }}>
               <h2><TypedText strings={["About"]} /></h2>
+              <p>I am a Computer Science student at the University of Auckland.</p>
               <p>
-                I am a Computer Science student at the University of Auckland.<br />
                 With a fascination for the world of technology,
                 I wish to innovate and contribute in a meaningful way
-                with my expertise in the field of software.<br />
+                with my expertise in the field of software.
+              </p>
+              <p>
                 Introduced to the Python programming language in high school,
                 my passion for developing projects and solving problems
                 through code has only grown since.
