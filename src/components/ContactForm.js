@@ -60,14 +60,12 @@ function ContactForm({ isDark }) {
           isInvalid={nameValidated && (nameLength <= 0 || nameLength >= 101)}
           className="form-control"
         />
-        <Form.Control.Feedback type="invalid">
-          <p>
-            {
-              nameLength <= 0 ?
-              "Please enter your name." :
-              "Name cannot exceed 100 characters."
-            }
-          </p>
+        <Form.Control.Feedback type="invalid" className='left-align'>
+          {
+            nameLength <= 0 ?
+            "Please enter your name." :
+            "Name cannot exceed 100 characters."
+          }
         </Form.Control.Feedback>
       </Form.Group>
       <Form.Group className="form-group">
@@ -84,8 +82,8 @@ function ContactForm({ isDark }) {
           isInvalid={emailValidated && !isValidEmail}
           className="form-control"
         />
-        <Form.Control.Feedback type="invalid">
-          <p>Please enter a valid email address.</p>
+        <Form.Control.Feedback type="invalid" className='left-align'>
+          Please enter a valid email address.
         </Form.Control.Feedback>
       </Form.Group>
       <Form.Group className="form-group">
@@ -103,14 +101,12 @@ function ContactForm({ isDark }) {
           isInvalid={messageValidated && (messageLength <= 0 || messageLength >= 1001)}
           className="form-control"
         />
-        <Form.Control.Feedback type="invalid">
-          <p>
-            {
-              messageLength <= 0 ?
-              "Please enter your message.":
-              "Message cannot exceed 1000 characters."
-            }
-          </p>
+        <Form.Control.Feedback type="invalid" className='left-align'>
+          {
+            messageLength <= 0 ?
+            "Please enter your message.":
+            "Message cannot exceed 1000 characters."
+          }
         </Form.Control.Feedback>
       </Form.Group>
       <Button

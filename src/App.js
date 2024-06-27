@@ -42,7 +42,7 @@ function App() {
       <div id="about">
         <Container>
           <Row>
-            <Col xs={12} lg={{ span: 8, offset: 2 }}>
+            <Col xs={12} lg={{ span: 8, offset: 2 }} xl={{ span: 6, offset: 3 }}>
               <h2><TypedText strings={["About"]} /></h2>
               <p>
                 I am a Computer Science student at the University of Auckland.<br />
@@ -61,6 +61,15 @@ function App() {
         <h2><TypedText strings={["Skills"]} /></h2>
         <Container>
           <Row>
+            <Col xs={12} lg={{ span: 8, offset: 2 }} xl={{ span: 6, offset: 3 }}>
+              <h4>Programming languages:</h4>
+              <p>Python, Kotlin, Java, HTML + CSS + JavaScript</p>
+              <h4>Frameworks and libraries:</h4>
+              <p>
+                JavaScript: React.js<br/>
+                Python: Flask, PyTorch, Pandas etc.
+              </p>
+            </Col>
             <Col xs={12} lg={{ span: 8, offset: 2 }} xl={{ span: 6, offset: 3 }}>
               <SkillsSlider />
             </Col>

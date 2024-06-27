@@ -16,7 +16,7 @@ function SkillsSlider() {
             <div className="icon">
               <img
                 src="/images/skills-slider/python.svg"
-                width="96"
+                width="72"
                 alt="Python"
               />
             </div>
@@ -32,14 +32,14 @@ function SkillsSlider() {
             <div className="icon">
               <img
                 src="/images/skills-slider/kotlin.png"
-                width="96"
+                width="72"
                 alt="Kotlin"
               />
             </div>
             <div className="icon">
               <img
                 src="/images/skills-slider/android.svg"
-                width="96"
+                width="72"
                 alt="Android"
               />
             </div>
@@ -116,7 +116,7 @@ function SkillsSlider() {
             <div className="icon">
               <img
                 src="/images/skills-slider/flask.png"
-                width="72"
+                width="64"
                 alt="Flask"
               />
             </div>
