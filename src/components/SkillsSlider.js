@@ -21,10 +21,12 @@ function SkillsSlider() {
               />
             </div>
           </div>
-          <p>
-            Most proficient programming language (and also favourite)
-            - the syntax and readability cannot be beaten.
-          </p>
+          <div className='text'>
+            <p>
+              Most proficient programming language (and also favourite)
+              - the syntax and readability cannot be beaten.
+            </p>
+          </div>
         </div>
         <div className="slide">
           <h3>Kotlin + Android</h3>
@@ -44,10 +46,12 @@ function SkillsSlider() {
               />
             </div>
           </div>
-          <p>
-            Experienced with Kotlin syntax and programming concepts.<br />
-            Mobile development on Android.
-          </p>
+          <div className='text'>
+            <p>
+              Experienced with Kotlin syntax and programming concepts.<br />
+              Mobile development on Android.
+            </p>
+          </div>
         </div>
         <div className="slide">
           <h3>Java</h3>
@@ -55,14 +59,16 @@ function SkillsSlider() {
             <div className="icon">
               <img
                 src="/images/skills-slider/java.png"
-                width="128"
+                width="96"
                 alt="Java"
               />
             </div>
           </div>
-          <p>
-            Experienced with Java syntax and programming concepts.
-          </p>
+          <div className='text'>
+            <p>
+              Experienced with Java syntax and programming concepts.
+            </p>
+          </div>
         </div>
         <div className="slide">
           <h3>HTML + CSS + JavaScript</h3>
@@ -89,10 +95,12 @@ function SkillsSlider() {
               />
             </div>
           </div>
-          <p>
-            Front-end web development using HTML + CSS + JavaScript.<br />
-            Created many webpages such as this one.
-          </p>
+          <div className='text'>
+            <p>
+              Front-end web development using HTML + CSS + JavaScript.<br />
+              Created many webpages such as this one.
+            </p>
+          </div>
         </div>
         <div className="slide">
           <h3>React.js</h3>
@@ -105,13 +113,15 @@ function SkillsSlider() {
               />
             </div>
           </div>
-          <p>
-            Front-end web development using the React JavaScript library.<br />
-            Created many webpages such as this one.
-          </p>
+          <div className='text'>
+            <p>
+              Front-end web development using the React JavaScript library.<br />
+              Created many webpages such as this one.
+            </p>
+          </div>
         </div>
         <div className="slide">
-          <h3>Flask<br />(Python library)</h3>
+          <h3>Flask (Python library)</h3>
           <div className="icons">
             <div className="icon">
               <img
@@ -121,10 +131,12 @@ function SkillsSlider() {
               />
             </div>
           </div>
-          <p>
-            Back-end web development using the Flask framework.<br />
-            Familiar with building RESTful web APIs.
-          </p>
+          <div className='text'>
+            <p>
+              Back-end web development using the Flask framework.<br />
+              Familiar with building RESTful web APIs.
+            </p>
+          </div>
         </div>
       </Slider>
     </div>

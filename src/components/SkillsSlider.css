@@ -15,12 +15,20 @@
 }
 
 .icons {
+  height: 30%;
   display: inline-block;
   margin: 10px;
 }
 
 .icon {
   float: left;
+}
+
+.text {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dark .slick-prev:before,
