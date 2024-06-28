@@ -16,7 +16,7 @@ function SkillsSlider() {
             <div className="icon">
               <img
                 src="/images/skills-slider/python.svg"
-                width="72"
+                width="80"
                 alt="Python"
               />
             </div>
@@ -121,12 +121,12 @@ function SkillsSlider() {
           </div>
         </div>
         <div className="slide">
-          <h3>Flask (Python library)</h3>
+          <h3>Flask<br />(Python library)</h3>
           <div className="icons">
             <div className="icon">
               <img
                 src="/images/skills-slider/flask.png"
-                width="64"
+                width="72"
                 alt="Flask"
               />
             </div>
