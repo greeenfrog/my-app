@@ -16,7 +16,7 @@ function SkillsSlider() {
             <div className="icon">
               <img
                 src="/images/skills-slider/python.svg"
-                width="80"
+                width="72"
                 alt="Python"
               />
             </div>
@@ -108,7 +108,7 @@ function SkillsSlider() {
             <div className="icon">
               <img
                 src="/images/skills-slider/react.svg"
-                width="96"
+                width="80"
                 alt="React.js"
               />
             </div>
