@@ -6,24 +6,24 @@ import TypedText from './TypedText';
 import ThemeButton from './ThemeButton';
 import './Navigation.css'
 
-function getMenuIcon(isDark, isExpanded) {
-  if (isDark) {
-    return (
-      isExpanded ?
-      "/images/navigation/cross-yellow.png" :
-      "/images/navigation/menu-yellow.png"
-    );
-  } else {
-    return (
-      isExpanded ?
-      "/images/navigation/cross.png" :
-      "/images/navigation/menu.png"
-    );
-  }
-}
-
 function Navigation({ brand, isDark, onToggleTheme }) {
   const [isExpanded, setExpanded] = useState(false);
+
+  function getMenuIcon() {
+    if (isDark) {
+      return (
+        isExpanded ?
+        "/images/navigation/cross-yellow.png" :
+        "/images/navigation/menu-yellow.png"
+      );
+    } else {
+      return (
+        isExpanded ?
+        "/images/navigation/cross.png" :
+        "/images/navigation/menu.png"
+      );
+    }
+  }
 
   return (
     <Navbar
@@ -47,7 +47,7 @@ function Navigation({ brand, isDark, onToggleTheme }) {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav-toggle">
           <img
-            src={getMenuIcon(isDark, isExpanded)}
+            src={getMenuIcon()}
             width="32"
             height="32"
             alt=""
