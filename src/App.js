@@ -13,9 +13,11 @@ function App() {
   const name = ["Li Jianing", "李嘉宁"];
   const about = ["Software developer", "CS student @ UoA"]
   const [cookies, setCookie] = useCookies(["dark"]);
-  if (typeof cookies["dark"] == "undefined") setCookie("dark", true, {path: "/"});
-
-  const [isDark, setDark] = useState(cookies["dark"]);
+  const [isDark, setDark] = useState(
+    (typeof cookies["dark"] == "undefined") ?
+    true :
+    cookies["dark"]
+  );
   if (isDark) document.body.classList.add("dark");
 
   return (
@@ -24,7 +26,7 @@ function App() {
         brand={name}
         isDark={isDark}
         onToggleTheme={() => {          
-          setCookie("dark", !isDark, {path: "/"});
+          setCookie("dark", !isDark, {path: "/", sameSite: "strict"});
           setDark(!isDark);
           document.body.classList.toggle("dark");
         }}
