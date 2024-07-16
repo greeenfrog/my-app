@@ -19,9 +19,18 @@ def test():
 def send():
     if request.method == 'POST':
         form = request.form.to_dict()
-        for i in ['name', 'email', 'message']:
-            if i not in form:
-                raise BadRequest(f'"{i}" is missing in form')
+        fields = {
+            'name': 100,
+            'email': 100,
+            'message': 1000,
+        }
+        for field in fields:
+            content = form.get(field)
+            if not content:
+                raise BadRequest(f'{field} is missing in form')
+            elif len(content) > fields[field]:
+                raise BadRequest(f'{field} cannot exceed {fields[field]} characters')
+
         if not os.path.exists(config.FORMS_PATH):
             os.mkdir(config.FORMS_PATH)
         n = len(os.listdir(config.FORMS_PATH))
