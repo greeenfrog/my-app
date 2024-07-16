@@ -70,8 +70,8 @@ function App() {
               <p>Python, Kotlin, Java, HTML + CSS + JavaScript</p>
               <h4>Frameworks and libraries:</h4>
               <p>
-                JavaScript: React.js<br/>
-                Python: Flask, PyTorch, Pandas etc.
+                JavaScript: React, Bootstrap<br/>
+                Python: Flask, PyTorch, Pandas, Matplotlib etc.
               </p>
               <SkillsSlider />
             </Col>
