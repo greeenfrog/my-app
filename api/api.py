@@ -15,7 +15,7 @@ def index():
 def test():
     return 'test'
 
-@app.route('/api/send', methods=['POST'])
+@app.route('/api/contact', methods=['POST'])
 def send():
     if request.method == 'POST':
         form = request.form.to_dict()

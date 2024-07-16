@@ -29,7 +29,7 @@ function ContactForm({ isDark }) {
   async function sendData(formData) {
     console.log(...formData);
     try {
-      const response = await fetch("/api/send", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         body: formData,
       });
