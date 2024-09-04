@@ -115,13 +115,13 @@ function SkillsSlider() {
           </div>
           <div className='text'>
             <p>
-              Front-end web development using the React JavaScript library.<br />
+              Front-end web development using the React framework.<br />
               Created many webpages such as this one.
             </p>
           </div>
         </div>
         <div className="slide">
-          <h3>Flask<br />(Python library)</h3>
+          <h3>Flask<br />(Python framework)</h3>
           <div className="icons">
             <div className="icon">
               <img

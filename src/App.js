@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   const name = ["Li Jianing", "李嘉宁"];
-  const about = ["Software developer", "CS student @ UoA"]
+  const about = ["Software developer", "CS + Math @ UoA"]
   const [cookies, setCookie] = useCookies(["dark"]);
   const [isDark, setDark] = useState(
     (typeof cookies["dark"] == "undefined") ?
@@ -46,7 +46,7 @@ function App() {
           <Row>
             <Col xs={12} lg={{ span: 8, offset: 2 }} xl={{ span: 6, offset: 3 }}>
               <h2><TypedText strings={["About"]} /></h2>
-              <p>I am a Computer Science student at the University of Auckland.</p>
+              <p>I am a Computer Science and Mathematics student at the University of Auckland.</p>
               <p>
                 With a fascination for the world of technology,
                 I wish to innovate and contribute in a meaningful way
@@ -66,12 +66,11 @@ function App() {
         <Container>
           <Row>
             <Col xs={12} lg={{ span: 8, offset: 2 }} xl={{ span: 6, offset: 3 }}>
-              <h4>Programming languages:</h4>
-              <p>Python, Kotlin, Java, HTML + CSS + JavaScript</p>
-              <h4>Frameworks and libraries:</h4>
+              <h4>Languages:</h4>
+              <p>Python, Java, JavaScript, TypeScript, HTML/CSS, Kotlin, SQL</p>
+              <h4>Frameworks/libraries:</h4>
               <p>
-                JavaScript: React, Bootstrap<br/>
-                Python: Flask, PyTorch, Pandas, Matplotlib etc.
+                React, Next, Flask, Tailwind, Bootstrap, Pandas, Matplotlib, NumPy, PyTorch
               </p>
               <SkillsSlider />
             </Col>
