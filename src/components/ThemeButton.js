@@ -1,54 +1,39 @@
-// import ButtonGroup from 'react-bootstrap/ButtonGroup';
-// import ToggleButton from 'react-bootstrap/ToggleButton';
 import { Switch } from '@mui/material';
 
 function ThemeButton({ isDark, onToggleTheme }) {
   return (
-    // <div id="theme-container">
-    //   <ButtonGroup>
-    //     <ToggleButton
-    //       id="toggle-check"
-    //       type="checkbox"
-    //       variant='secondary'
-    //       checked={isDark}
-    //       value={1}
-    //       onChange={() => onToggleTheme()}
-    //       className="theme-btn"
-    //       title={
-    //         isDark ?
-    //         "Light theme" :
-    //         "Dark theme"
-    //       }
-    //     >
-    //       <img
-    //         src={
-    //           isDark ?
-    //           "/images/navigation/light-theme.png" :
-    //           "/images/navigation/dark-theme.png"
-    //         }
-    //         width="30"
-    //         height="30"
-    //         alt={
-    //           isDark ?
-    //           "Light theme" :
-    //           "Dark theme"
-    //         }
-    //       />
-    //     </ToggleButton>
-    //   </ButtonGroup>
-    // </div>
     <div>
       <Switch
         checked={isDark}
         color="default"
         onChange={() => onToggleTheme()}
-        className='theme-btn'
         title={
           isDark ?
           "Light theme" :
           "Dark theme"
         }
         sx={{
+          marginX: 1,
+          width: 76,
+          height: 52,
+          '& .Mui-checked': {
+            transform: 'translateX(28px)',
+            '& .MuiSwitch-thumb': {
+              backgroundImage: 'url("/images/navigation/light-theme.png")',
+              backgroundSize: 32,
+            }
+          },
+          '& .MuiSwitch-thumb': {
+            width: 32,
+            height: 32,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundImage: 'url("/images/navigation/dark-theme.png")',
+            backgroundSize: 26,
+          },
+          '& .MuiSwitch-track': {
+            borderRadius: 16,
+          }
         }}
       />
     </div>
