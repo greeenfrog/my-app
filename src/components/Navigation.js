@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import Container from 'react-bootstrap/Container';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import TypedText from './TypedText';
@@ -8,7 +9,13 @@ import ThemeButton from './ThemeButton';
 import './Navigation.css'
 
 function Navigation({ brand, isDark, onToggleTheme }) {
+  const location = useLocation();
   const [isExpanded, setExpanded] = useState(false);
+  const [activeKey, setActiveKey] = useState("/#");
+
+  useEffect(() => {
+    setActiveKey(location.pathname + (location.hash || "#"));
+  }, [location]);
 
   function getMenuIcon() {
     if (isDark) {
@@ -35,7 +42,7 @@ function Navigation({ brand, isDark, onToggleTheme }) {
       onToggle={() => setExpanded(!isExpanded)}
     >
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/#">
           <img
             src="/images/pfp.png"
             width="48"
@@ -43,7 +50,7 @@ function Navigation({ brand, isDark, onToggleTheme }) {
             alt=""
           />
         </Navbar.Brand>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/#">
           <TypedText strings={brand}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav-toggle">
@@ -55,9 +62,9 @@ function Navigation({ brand, isDark, onToggleTheme }) {
           />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav defaultActiveKey="/#" className="ms-auto">
+          <Nav activeKey={activeKey} className="ms-auto">
             <Nav.Link as={HashLink} to="/#" href="/#" className="nav-link">Home</Nav.Link>
-            <Nav.Link as={HashLink} to="/#about" href="/#about" className="nav-link">About</Nav.Link>
+            <Nav.Link as={HashLink} smooth to="/#about" href="/#about" className="nav-link">About</Nav.Link>
             <Nav.Link as={HashLink} to="/#skills" href="/#skills" className="nav-link">Skills</Nav.Link>
             <Nav.Link as={HashLink} to="/#contact" href="/#contact" className="nav-link">Contact</Nav.Link>
             <Nav.Link as={HashLink} to="/projects#" href="/projects#" className="nav-link">Projects</Nav.Link>
