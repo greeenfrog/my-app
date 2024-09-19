@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 import Navigation from './components/Navigation';
 import Home from './Home';
+import Projects from './Projects';
 import './App.css';
 
 function App() {
@@ -17,16 +19,27 @@ function App() {
 
   return (
     <div className="App">
-      <Navigation
-        brand={name}
-        isDark={isDark}
-        onToggleTheme={() => {          
-          setCookie("dark", !isDark, {path: "/", sameSite: "strict"});
-          setDark(!isDark);
-          document.body.classList.toggle("dark");
-        }}
-      />
-      <Home name={name} about={about} isDark={isDark}/>
+      <Router>
+        <Navigation
+          brand={name}
+          isDark={isDark}
+          onToggleTheme={() => {          
+            setCookie("dark", !isDark, {path: "/", sameSite: "strict"});
+            setDark(!isDark);
+            document.body.classList.toggle("dark");
+          }}
+        />
+        <Routes>
+          <Route
+            path='/'
+            element={<Home name={name} about={about} isDark={isDark} />}
+          />
+          <Route
+            path='/projects'
+            element={<Projects />}
+          />
+        </Routes>
+      </Router>
       <footer>
         {name.join(" | ")}<br />
         Powered by React.js + Flask<br />
