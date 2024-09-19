@@ -16,12 +16,14 @@ function ThemeButton({ isDark, onToggleTheme }) {
           marginX: 1,
           width: 76,
           height: 52,
-          '& .Mui-checked': {
-            transform: 'translateX(28px)',
-            '& .MuiSwitch-thumb': {
-              backgroundImage: 'url("/images/navigation/light-theme.png")',
-              backgroundSize: 32,
-            }
+          '& .MuiSwitch-switchBase': {
+            '&.Mui-checked': {
+              transform: 'translateX(26px)',
+              '& .MuiSwitch-thumb': {
+                backgroundImage: 'url("/images/navigation/light-theme.png")',
+                backgroundSize: 32,
+              }
+            },
           },
           '& .MuiSwitch-thumb': {
             width: 32,
